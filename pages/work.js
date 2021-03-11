@@ -53,7 +53,7 @@ const works=[
 ]
 export default function Work() {
   return (
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-5 lg:gap-8">
           {works.map((work,i)=> true? [<Img data={work}/>, <Info data={work}/>]:[<Img data={work}/>, <Info data={work}/>].reverse())}
         </div>
   )
@@ -71,12 +71,12 @@ function Img({data}){
 function Info({data}){
   const { src, title, link, description, badges }=data
   return(
-    <div class="p-5 space-y-7">
-      <div class=" text-3xl font-bold"><a  href={link} target="_blank"><span class="mb-2 text-lg">&#128279; </span> <span>{title}</span></a></div>
+    <div class="space-y-7 border-b-2 md:border-b-0 m-4 pb-4">
+      <div class="md:text-lg lg:text-xl text-medium font-bold"><a  href={link} target="_blank"><span class="mb-2 text-lg">&#128279; </span> <span>{title}</span></a></div>
       {src?<div class="text-md font-medium"><a class="flex flex-row space-x-2" href={link} target="_blank"><span  class="m-0 "><AiFillGithub class="mt-1"/></span> <p >source</p></a></div>:null}
-      <div class="flex flex-row">{badges}</div>
+      <div class="flex flex-wrap">{badges}</div>
       {/* <div><a class="transition duration-500 ease-in-out font-medium" href={link} target="_blank">&#128279; {link}</a></div> */}
-      <div class="font-mono font-medium">{description}</div>
+      <div class="font-mono font-medium ">{description}</div>
     </div>
   )
 }
