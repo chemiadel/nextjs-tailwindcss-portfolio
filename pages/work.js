@@ -54,7 +54,7 @@ const works=[
 export default function Work() {
   return (
         <div class="grid grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-5 lg:gap-8">
-          {works.map((work,i)=> true? [<Img data={work}/>, <Info data={work}/>]:[<Img data={work}/>, <Info data={work}/>].reverse())}
+          {works.map((work,i)=> [<Img key={i.toString()} data={work}/>, <Info key={`0${i.toString()}`} data={work}/>])}
         </div>
   )
 }
