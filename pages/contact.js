@@ -1,4 +1,5 @@
 import { FaDiscord, FaGithub, FaLinkedin} from 'react-icons/fa';
+import Head from 'next/head'
 
 const skills={
   Backend:["NodeJS", "Google Apps Script", "VBA"],
@@ -11,6 +12,11 @@ const skills={
 
 export default function Home() {
   return (
+    <>
+      <Head>
+        <title>Contact</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div class="grid grid-cols-1 lg:grid-cols-1 space-y-5 gap-4">
         <div class="space-y-5 m-auto align-middle">
             <div class="font-mono text-3xl font-extrabold	">
@@ -29,5 +35,6 @@ export default function Home() {
         <button class="rounded-lg p-4 border-2 border-blue-300 "><FaDiscord class="text-blue-300 "/></button>
         </div>
       </div>
+      </>
   )
 }

@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 
 const ReactJson = dynamic(() => import('react-json-view'), {ssr : false})
 
@@ -13,6 +14,11 @@ const skills={
 
 export default function Home() {
   return (
+      <>
+      <Head>
+        <title>Adel Chemi</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
       <div class="mx-auto space-y-6">
         <img class="block lg:hidden 
@@ -35,5 +41,6 @@ export default function Home() {
       <img class="hidden lg:block w-full mx-auto rounded-lg shadow-lg " src="/me.jpg" alt="Adel Chemi" />
       </div>
       </div>
+      </>
   )
 }

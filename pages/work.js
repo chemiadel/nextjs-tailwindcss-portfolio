@@ -1,4 +1,5 @@
 import {AiFillGithub} from 'react-icons/ai'
+import Head from 'next/head'
 
 const works=[
   {
@@ -53,9 +54,15 @@ const works=[
 ]
 export default function Work() {
   return (
+    <>
+          <Head>
+        <title>Work</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
         <div class="grid grid-cols-1 md:grid-cols-2 sm:gap-2 md:gap-5 lg:gap-8">
           {works.map((work,i)=> [<Img key={i.toString()} data={work}/>, <Info key={`0${i.toString()}`} data={work}/>])}
         </div>
+        </>
   )
 }
 
