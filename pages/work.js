@@ -34,7 +34,7 @@ const works=[
   },{
     img:"/sm.png",
     title: "Sheetmania blog",
-    link: "https://nextjs-wo.vercel.app/",
+    link: "https://adelchemi.blogspot.com/",
     description: "Blog for Google sheets and Apps script tutorials and tricks",
     badges: [
       <img alt="Blogger" src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" />
