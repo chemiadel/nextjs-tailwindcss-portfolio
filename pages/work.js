@@ -21,17 +21,6 @@ const works=[
       <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>
     ]
   },{
-    img:"/wo.png",
-    title: "Workoutorb",
-    link: "https://nextjs-wo.vercel.app/",
-    description: "Web app for creating workout routine cards",
-    badges: [
-      <img alt="Next JS" src="https://img.shields.io/badge/next%20js%20-%23000000.svg?&style=for-the-badge&logo=next.js&logoColor=white"/>,
-      <img alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>,
-      <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>,
-      <img alt="Material UI" src="https://img.shields.io/badge/material%20ui%20-%230081CB.svg?&style=for-the-badge&logo=material-ui&logoColor=white"/>
-    ]
-  },{
     img:"/sm.png",
     title: "Sheetmania blog",
     link: "https://adelchemi.blogspot.com/",
